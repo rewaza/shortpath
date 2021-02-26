@@ -1,0 +1,47 @@
+# This file contains metadata for your plugin.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Short Path
+qgisMinimumVersion=3.0
+description=Find shortest path between points based on line (network) layer.
+version=0.1
+author=Revaz Gviniashvili
+email=rewaza@gmail.com
+
+about=This plugin is for finding shortest path between two point layers based on one line layer used as a network layer. Plugin was inspired by water utility network maintenance process where Loggers are sensors and Leaks are faults on the pipeline. Pipe network - line layer (should have attributes like a pipe diameter, pipe material, etc) Leak - point layer (should have ID, Logger ID, lat, long attributes) Logger - point layer (should have ID, lat, long attributes) For the path finding is used Dijkstra's algorithm and output is a new memory line layer with same attributes as a network layer plus full length attribute. Download test layers package here:  https://github.com/rewaza/rewaza.github.io/blob/main/shortpath/test_net.zip
+
+tracker=https://github.com/rewaza/shortpath/issues
+repository=https://github.com/rewaza/shortpath
+# End of mandatory metadata
+
+# Recommended items:
+
+hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=point, line, analysis, calculator, network, network analysis, processing, routing
+
+homepage=https://rewaza.github.io/shortpath
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
+
+Category of the plugin: Raster, Vector, Database or Web
+# category=
+
+# If the plugin can run on QGIS Server.
+server=False
+
